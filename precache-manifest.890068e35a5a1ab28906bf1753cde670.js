@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "27ed9a686f36a4add56cc9b5631d400f",
+    "revision": "30947cf988ca088641fd3adff4a872f7",
     "url": "/jh5bh5b3jhbimproved-octo-journey/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jh5bh5b3jhbimproved-octo-journey/static/css/2.d47699ed.chunk.css"
   },
   {
-    "revision": "42937b6cb281ccf73281",
-    "url": "/jh5bh5b3jhbimproved-octo-journey/static/css/main.d5c8dc11.chunk.css"
+    "revision": "90d9b9afc915093cd4fb",
+    "url": "/jh5bh5b3jhbimproved-octo-journey/static/css/main.04804eec.chunk.css"
   },
   {
     "revision": "9eb5b04d96d2f3189cf3",
     "url": "/jh5bh5b3jhbimproved-octo-journey/static/js/2.5fc05352.chunk.js"
   },
   {
-    "revision": "42937b6cb281ccf73281",
+    "revision": "90d9b9afc915093cd4fb",
     "url": "/jh5bh5b3jhbimproved-octo-journey/static/js/main.01c25dfb.chunk.js"
   },
   {
