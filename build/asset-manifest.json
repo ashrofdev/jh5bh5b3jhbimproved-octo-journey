@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/lingual-robot/static/css/main.b45df2f6.chunk.css",
-    "main.js": "/lingual-robot/static/js/main.4ea0fb7b.chunk.js",
-    "main.js.map": "/lingual-robot/static/js/main.4ea0fb7b.chunk.js.map",
-    "runtime~main.js": "/lingual-robot/static/js/runtime~main.e1ddff78.js",
-    "runtime~main.js.map": "/lingual-robot/static/js/runtime~main.e1ddff78.js.map",
-    "static/css/2.8e07c7cb.chunk.css": "/lingual-robot/static/css/2.8e07c7cb.chunk.css",
-    "static/js/2.40a8b625.chunk.js": "/lingual-robot/static/js/2.40a8b625.chunk.js",
-    "static/js/2.40a8b625.chunk.js.map": "/lingual-robot/static/js/2.40a8b625.chunk.js.map",
-    "index.html": "/lingual-robot/index.html",
-    "precache-manifest.7f97d9000764979433a36de03dcc1115.js": "/lingual-robot/precache-manifest.7f97d9000764979433a36de03dcc1115.js",
-    "service-worker.js": "/lingual-robot/service-worker.js",
-    "static/css/2.8e07c7cb.chunk.css.map": "/lingual-robot/static/css/2.8e07c7cb.chunk.css.map",
-    "static/css/main.b45df2f6.chunk.css.map": "/lingual-robot/static/css/main.b45df2f6.chunk.css.map",
-    "static/media/font-awesome.min.css": "/lingual-robot/static/media/fontawesome-webfont.fee66e71.woff"
+    "main.css": "/jh5bh5b3jhbimproved-octo-journey/static/css/main.d5c8dc11.chunk.css",
+    "main.js": "/jh5bh5b3jhbimproved-octo-journey/static/js/main.01c25dfb.chunk.js",
+    "main.js.map": "/jh5bh5b3jhbimproved-octo-journey/static/js/main.01c25dfb.chunk.js.map",
+    "runtime~main.js": "/jh5bh5b3jhbimproved-octo-journey/static/js/runtime~main.9f647fde.js",
+    "runtime~main.js.map": "/jh5bh5b3jhbimproved-octo-journey/static/js/runtime~main.9f647fde.js.map",
+    "static/css/2.d47699ed.chunk.css": "/jh5bh5b3jhbimproved-octo-journey/static/css/2.d47699ed.chunk.css",
+    "static/js/2.5fc05352.chunk.js": "/jh5bh5b3jhbimproved-octo-journey/static/js/2.5fc05352.chunk.js",
+    "static/js/2.5fc05352.chunk.js.map": "/jh5bh5b3jhbimproved-octo-journey/static/js/2.5fc05352.chunk.js.map",
+    "index.html": "/jh5bh5b3jhbimproved-octo-journey/index.html",
+    "precache-manifest.a9ab7e2c0ba6dba18f521b27025f84c5.js": "/jh5bh5b3jhbimproved-octo-journey/precache-manifest.a9ab7e2c0ba6dba18f521b27025f84c5.js",
+    "service-worker.js": "/jh5bh5b3jhbimproved-octo-journey/service-worker.js",
+    "static/css/2.d47699ed.chunk.css.map": "/jh5bh5b3jhbimproved-octo-journey/static/css/2.d47699ed.chunk.css.map",
+    "static/css/main.d5c8dc11.chunk.css.map": "/jh5bh5b3jhbimproved-octo-journey/static/css/main.d5c8dc11.chunk.css.map",
+    "static/media/font-awesome.min.css": "/jh5bh5b3jhbimproved-octo-journey/static/media/fontawesome-webfont.fee66e71.woff"
   }
 }

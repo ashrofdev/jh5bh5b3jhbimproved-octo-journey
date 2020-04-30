@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to right, var(--cpl), var(--cp)), url(./dic.jpeg);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
