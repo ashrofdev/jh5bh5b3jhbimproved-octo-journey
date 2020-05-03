@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9d35d2f1034905f13c17df0a0d6542d2",
+    "revision": "7ade064a19e739c670148a18d6e39398",
     "url": "/jh5bh5b3jhbimproved-octo-journey/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jh5bh5b3jhbimproved-octo-journey/static/css/2.d47699ed.chunk.css"
   },
   {
-    "revision": "a0d5c36ae1b61cd21997",
-    "url": "/jh5bh5b3jhbimproved-octo-journey/static/css/main.0d0bc80e.chunk.css"
+    "revision": "8a609c7368bc3e7f7892",
+    "url": "/jh5bh5b3jhbimproved-octo-journey/static/css/main.7275947b.chunk.css"
   },
   {
     "revision": "e8947a8330d5e4272cce",
     "url": "/jh5bh5b3jhbimproved-octo-journey/static/js/2.42aeafde.chunk.js"
   },
   {
-    "revision": "a0d5c36ae1b61cd21997",
-    "url": "/jh5bh5b3jhbimproved-octo-journey/static/js/main.f3879cbf.chunk.js"
+    "revision": "8a609c7368bc3e7f7892",
+    "url": "/jh5bh5b3jhbimproved-octo-journey/static/js/main.d72d2c7a.chunk.js"
   },
   {
     "revision": "b13019140663178165b8",
