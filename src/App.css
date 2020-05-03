@@ -7,6 +7,7 @@ html {
 }
 
 body {
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -36,7 +37,7 @@ button {
     transform: -50%,-50%;
 }
 .admin {
-    color: black;
+    color: white;
 }
 .admin .user {
     padding: 1rem;
@@ -51,21 +52,7 @@ button {
 }
 
 
-footer {
-    background-color: black;
-    color: gray;
-    font-size: .8rem;
-    padding: 1rem 0;
-    text-align: center;
-    justify-self: flex-end;
-}
 
-.load {
-    align-self: center;
-    margin: 2rem auto;
-    display: block;
-    text-align: center;
-}
 
 @media only screen and (max-width: 550px) {
     .user_page .top {
