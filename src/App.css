@@ -26,8 +26,12 @@ button {
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    outline: none;
 }
 
+.loader {
+    width: 3rem;
+}
 .admin {
     color: white;
 }

@@ -8,7 +8,8 @@ class Admin extends Component {
         route: 'users',
         users: [],
         user: {},
-        payments: []
+        payments: [],
+        isLoading: true
     }
     
     componentDidMount(){
@@ -16,32 +17,17 @@ class Admin extends Component {
         const users = []
 
         firebaseDB.ref('users').on('value', e=>{
-            e.forEach(e=>{
-                const userKey = e.key
-                users.push({...e.val(), userKey})
-
-            })
-            new Notification('GOOD NEWS', {body: 'Check for changes'})
+            console.log(e.val(), '..............')
+                this.setState({isLoading: false})
+                e.forEach(e=>{
+                    const userKey = e.key
+                    users.push({...e.val(), userKey})
+    
+                })
+            
+            // new Notification('GOOD NEWS', {body: 'Check for changes'})
             this.setState({users})
             
-            // const payments = []
-            //  e.forEach(e=>{
-            //     const userKey = e.key
-            //     if(e.val().payments !== undefined) {
-            //         const payment = Object.entries(e.val().payments)
-            //         payment.forEach(e=>{
-            //             const key = e[0]
-            //             payments.push({...e[1], key, userKey})
-            //             console.log(e[0])
-            //         })
-                    
-            //     }
-                
-            // })
-            //         this.setState({payments})
-            //         console.log(this.state.payments)
-            // new Notification('GOOD NEWS', {body: 'CHECKUP'})
-            // console.log(e.val().payments)
         })
 
      
@@ -51,8 +37,13 @@ class Admin extends Component {
     }
 
     confirmPayment = (e) => {
-        firebaseDB.ref(`users/${e.userKey}/payments/${e.key}`).update({
+        console.log(e)
+        firebaseDB.ref(`users/${this.state.user.userKey}/payments/${e.key}`).update({
             confirmed: true
+        }).then(e=>{
+            console.log(e)
+        }).catch(e=>{
+            console.log(e)
         })
     }
      
@@ -89,6 +80,10 @@ class Admin extends Component {
         // new Notification('GOOD NEWS', {body: 'CHECKUP'})
         return (
             <div className="admin">
+            {
+                this.state.isLoading?
+                <img className="loader" src={require('./2.gif')}/>:null
+            }
                 {
                     this.state.route==='users'?
                     <div className="users">
