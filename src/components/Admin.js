@@ -99,13 +99,15 @@ class Admin extends Component {
                     } 
                     </div>:
                     <div className="user_page">
+                        <button className="back_btn" onClick={()=>this.setState({route: 'users'})}>BACK</button>
                         {
                             this.state.user.payments?
                                 <div>
+                                
                                 <div className="user top">
                                     <p>Username: {this.state.user.username}</p>
                                     <p>Fullname: {this.state.user.name}</p>
-                                    <p>Date registered: {this.state.user.date}</p>
+                                    <p>Date registered: {this.state.user.registeredDate}</p>
                                     <p>Total Invested: {this.state.user.totalInvested}</p>
                                     <p>Earnings: {this.state.user.earnings}</p>
                                     

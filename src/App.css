@@ -29,6 +29,10 @@ button {
     outline: none;
 }
 
+.back_btn {
+    background-color: wheat;
+    color: black;
+}
 .loading {
     width: 10rem;
     position: absolute;
@@ -59,5 +63,8 @@ button {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: flex-start;
+    }
+    .loading {
+        width: 10rem;
     }
 }
