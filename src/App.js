@@ -20,7 +20,7 @@ class App extends Component {
         console.log('alright')
     })
     return (
-      <div className="App">
+      <div>
         <Admin/>
       </div>
     );

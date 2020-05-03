@@ -7,7 +7,6 @@ html {
 }
 
 body {
-    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -29,11 +28,15 @@ button {
     outline: none;
 }
 
-.loader {
-    width: 3rem;
+.loading {
+    width: 10rem;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: -50%,-50%;
 }
 .admin {
-    color: white;
+    color: black;
 }
 .admin .user {
     padding: 1rem;
@@ -57,11 +60,6 @@ footer {
     justify-self: flex-end;
 }
 
-.loader {
-    display: none;
-    width: 5rem;
-    margin-top: 2rem;
-}
 .load {
     align-self: center;
     margin: 2rem auto;

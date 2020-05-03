@@ -18,7 +18,6 @@ class Admin extends Component {
 
         firebaseDB.ref('users').on('value', e=>{
             console.log(e.val(), '..............')
-                this.setState({isLoading: false})
                 e.forEach(e=>{
                     const userKey = e.key
                     users.push({...e.val(), userKey})
@@ -26,7 +25,8 @@ class Admin extends Component {
                 })
             
             // new Notification('GOOD NEWS', {body: 'Check for changes'})
-            this.setState({users})
+            this.setState({users, isLoading: false})
+
             
         })
 
@@ -80,10 +80,10 @@ class Admin extends Component {
         // new Notification('GOOD NEWS', {body: 'CHECKUP'})
         return (
             <div className="admin">
-            {
-                this.state.isLoading?
-                <img className="loader" src={require('./2.gif')}/>:null
-            }
+                {
+                    this.state.isLoading?
+                    <img className="loading" src={require('./2.gif')}/>:null
+                }
                 {
                     this.state.route==='users'?
                     <div className="users">
