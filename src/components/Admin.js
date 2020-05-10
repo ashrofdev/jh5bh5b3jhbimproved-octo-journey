@@ -37,13 +37,21 @@ class Admin extends Component {
     }
 
     confirmPayment = (e) => {
+
+        const amount = e.amount
+        const newInvestedAmount = this.state.user.earnings + parseInt(amount)
+
         console.log(e)
         firebaseDB.ref(`users/${this.state.user.userKey}/payments/${e.key}`).update({
             confirmed: true
         }).then(e=>{
-            console.log(e)
+            firebaseDB.ref(`users/${this.state.user.userKey}`).update({
+                totalInvested: newInvestedAmount
+            }).then(e=>{
+                alert('completed')
+            })
         }).catch(e=>{
-            console.log(e)
+            alert(e.message)
         })
     }
      
