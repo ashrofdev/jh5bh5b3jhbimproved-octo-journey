@@ -89,6 +89,10 @@ class Admin extends Component {
         return (
             <div className="admin">
                 {
+                    this.state.route === 'user'?
+                    <button className="back_btn" onClick={()=>this.setState({route: 'users'})}>BACK</button>:null
+                }
+                {
                     this.state.isLoading?
                     <img className="loading" src={require('./2.gif')}/>:null
                 }
@@ -107,7 +111,7 @@ class Admin extends Component {
                     } 
                     </div>:
                     <div className="user_page">
-                        <button className="back_btn" onClick={()=>this.setState({route: 'users'})}>BACK</button>
+                       
                         {
                             this.state.user.payments?
                                 <div>
