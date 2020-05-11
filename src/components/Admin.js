@@ -9,14 +9,15 @@ class Admin extends Component {
         users: [],
         user: {},
         payments: [],
-        isLoading: true
+        isLoading: true,
+        reviews: []
     }
     
     componentDidMount(){
         
-        const users = []
 
         firebaseDB.ref('users').on('value', e=>{
+            const users = []
             console.log(e.val(), '..............')
                 e.forEach(e=>{
                     const userKey = e.key
@@ -30,8 +31,17 @@ class Admin extends Component {
             
         })
 
-     
+        ////////////// rendering reviews //////////////////
+        firebaseDB.ref('reviews').on('value', e=>{
+            const reviews = []
+            const review = Object.entries(e.val())
+            review.forEach(e=>{
+                reviews.push({...e[1]})
+            })
+            this.setState({reviews})
+        })
        
+
 
            
     }
@@ -133,11 +143,13 @@ class Admin extends Component {
                                         <h2>Payments for {this.state.user.username}</h2>
                                         {
                                             this.state.payments.map(e=>{
+                                                const dueDate = {...e.dueDate}
                                             return <div className="user">
                                                     <a href={`${e.screenshot}`}><img style={{width:'2rem', height:'2rem'}} src={e.screenshot}/></a>
                                                     <p>{e.username}</p>
                                                     <p>{e.amount}</p>
                                                     <p>{e.date}</p>
+                                                    <p>due for payment on:{dueDate.day}/{dueDate.month}</p>
                                                     {
                                                         e.confirmed?
                                                         'CONFIRMED':
