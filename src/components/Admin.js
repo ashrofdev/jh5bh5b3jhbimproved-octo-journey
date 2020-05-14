@@ -147,7 +147,7 @@ class Admin extends Component {
                                             return <div className="user pay">
                                                     <a href={`${e.screenshot}`}><img style={{width:'2rem', height:'2rem'}} src={e.screenshot}/></a>
                                                     <p>{e.username}</p>
-                                                    <p>{e.amount}</p>
+                                                    <p>${e.amount}</p>
                                                     <p>{e.date}</p>
                                                     <p>due for payment on:{dueDate.day}/{dueDate.month}</p>
                                                     {
