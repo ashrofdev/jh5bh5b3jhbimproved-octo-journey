@@ -144,7 +144,7 @@ class Admin extends Component {
                                         {
                                             this.state.payments.map(e=>{
                                                 const dueDate = {...e.dueDate}
-                                            return <div className="user">
+                                            return <div className="user pay">
                                                     <a href={`${e.screenshot}`}><img style={{width:'2rem', height:'2rem'}} src={e.screenshot}/></a>
                                                     <p>{e.username}</p>
                                                     <p>{e.amount}</p>

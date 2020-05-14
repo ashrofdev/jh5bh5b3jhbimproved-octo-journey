@@ -67,7 +67,9 @@ button {
     .loading {
         width: 10rem;
     }
-    .patment .user {
-        display: grid;grid-template-columns: repeat(3, 1fr);
+    .admin .user {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-bottom: .5px solid white;
     }
 }
