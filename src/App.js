@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css'
 import Admin from './components/Admin'
+import Reviews from './components/Reviews';
 
 class App extends Component {
     
@@ -22,6 +23,7 @@ class App extends Component {
     return (
       <div>
         <Admin/>
+        <Reviews/>
       </div>
     );
   }
