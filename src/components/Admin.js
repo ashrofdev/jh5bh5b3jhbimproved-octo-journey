@@ -31,15 +31,7 @@ class Admin extends Component {
             
         })
 
-        ////////////// rendering reviews //////////////////
-        firebaseDB.ref('reviews').on('value', e=>{
-            const reviews = []
-            const review = Object.entries(e.val())
-            review.forEach(e=>{
-                reviews.push({...e[1]})
-            })
-            this.setState({reviews})
-        })
+        
        
 
 

@@ -55,6 +55,12 @@ button {
     background-color: rgba(1, 1, 44, 0.685);
 }
 
+.review {
+    padding: 1rem;
+}
+.review p{
+    padding: 2rem;
+}
 
 
 
