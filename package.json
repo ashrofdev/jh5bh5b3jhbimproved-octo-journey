@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "firebase": "^7.14.2",
+    "firebase": "^10.9.0",
     "font-awesome": "^4.7.0",
     "gh-pages": "^2.1.1",
     "react": "^16.8.6",
